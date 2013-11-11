@@ -31,6 +31,7 @@ public:
     OgreApp1(void);
     virtual ~OgreApp1(void);
 	virtual bool keyPressed( const OIS::KeyEvent &arg );
+	virtual bool frameStarted(const Ogre::FrameEvent &evt);
 
 	FMOD_RESULT result;
 	FMOD::Sound *sound;
